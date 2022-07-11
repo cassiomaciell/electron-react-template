@@ -55,6 +55,7 @@ pnpm dist
 - Electron Builder
 - React
 - Vite (renderer)
+- TypeScript
 
 ## License
 
