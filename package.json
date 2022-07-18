@@ -13,7 +13,7 @@
 		"dev": "npm run clean && cross-env NODE_ENV=development concurrently -n UI,Render --kill-others  \"npm:ui:dev\" \"node ./scripts/serve.js\"",
 		"preview": "npm run clean && npm run build:ui:render && node ./scripts/create-package.js && electron .build",
 		"dist": "npm run clean && npm run build:ui:render && node ./scripts/create-package.js && npm run build:electron",
-		"ui:dev": "vite",
+		"ui:dev": "vite --port 3000",
 		"build:render": "webpack --mode=production",
 		"build:ui": "tsc && vite build",
 		"build:ui:render": "npm run build:ui && npm run build:render",
